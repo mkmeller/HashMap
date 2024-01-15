@@ -13,7 +13,6 @@ class HashMap:
         """
         Initialize new HashMap that uses
         separate chaining for collision resolution
-        DO NOT CHANGE THIS METHOD IN ANY WAY
         """
         self._buckets = DynamicArray()
 
@@ -28,7 +27,6 @@ class HashMap:
     def __str__(self) -> str:
         """
         Override string method to provide more readable output
-        DO NOT CHANGE THIS METHOD IN ANY WAY
         """
         out = ''
         for i in range(self._buckets.length()):
@@ -38,7 +36,6 @@ class HashMap:
     def _next_prime(self, capacity: int) -> int:
         """
         Increment from given number and the find the closest prime number
-        DO NOT CHANGE THIS METHOD IN ANY WAY
         """
         if capacity % 2 == 0:
             capacity += 1
@@ -52,7 +49,6 @@ class HashMap:
     def _is_prime(capacity: int) -> bool:
         """
         Determine if given integer is a prime number and return boolean
-        DO NOT CHANGE THIS METHOD IN ANY WAY
         """
         if capacity == 2 or capacity == 3:
             return True
@@ -71,18 +67,14 @@ class HashMap:
     def get_size(self) -> int:
         """
         Return size of map
-        DO NOT CHANGE THIS METHOD IN ANY WAY
         """
         return self._size
 
     def get_capacity(self) -> int:
         """
         Return capacity of map
-        DO NOT CHANGE THIS METHOD IN ANY WAY
         """
         return self._capacity
-
-    # ------------------------------------------------------------------ #
 
     def _hash(self, key: str) -> int:
         '''
